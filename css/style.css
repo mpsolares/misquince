@@ -1,0 +1,243 @@
+:root{
+    /* colors */
+    --primary: #28241c;
+    --secondary: #86785C;
+    --base: #ebe6e0;
+    
+    /* font families */
+    --font-primery: 'Rubik', sans-serif;
+    
+    /* spacing */
+    --small-spacing: 2.4rem;
+    --xsmal-spacing: 0.625rem;
+
+    /* Font sizes */
+    --text-large:1.4em; 
+    --text-medium:1.2em;
+    --text-base: 1em;
+    --text-small:0.65em;
+}
+
+*{
+    font-family: var(--font-primery);
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+ul{
+    list-style-type: none;
+}
+li > a{
+    color: #FFFFFF;
+    margin: var(--xsmal-spacing);
+}
+
+h1, h2{
+    text-align: center;
+}
+
+/************ Header ************/
+.bg-img{
+    background-image: url("../img/cheerful-attractive-young-woman-with-backpack-and-notebooks-standing-and-smiling-in-park.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+}
+.banner-text {
+    padding-top: 33%;
+}
+.position-text{
+    text-align:center;
+    margin-top: 5px;
+}
+.position-text li{
+	float: none;
+	display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: var(--text-large);
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+/************ nav ************/
+.topnav {
+    overflow: hidden;
+    background-color: var(--secondary);
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--text-base);
+  }
+  .topnav li {
+    float: right;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: var(--text-base);
+    margin: 0;
+  }
+  .topnav h1 > a{
+    margin-top: 14px;
+  }
+  .topnav li > a:hover {
+    color: var(--primary);
+  }
+
+
+
+/************ Body ************/
+.titles{
+    color: var(--secondary);
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#contacto > p{
+    color: var(--secondary);
+    padding: 20px 50px;
+}
+#acerca p{
+    color: var(--secondary);
+}
+/** sections colors **/
+
+#acerca, #fotos, #donde, #contacto{
+    background-color: #ebe6e0;
+    color: var(--secondary);
+    padding: 40px;
+}
+.contact-color{
+    color: var(--secondary);
+}
+
+form{
+    text-align: center;
+}
+.donde-at{
+    padding: 20px;
+}
+.gallery-margin{
+    padding: 10px 0 50px 0;
+}
+
+/*****  galeria  *****/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.25fr 0.5fr 0.25fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.gallery__img:nth-of-type(1) {
+    grid-area: 1 / 1 / 3 / 2;
+}
+.gallery__img:nth-of-type(2) {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.gallery__img:nth-of-type(3) {
+    grid-area: 3 / 1 / 5 / 2; 
+}
+.gallery__img:nth-of-type(4) {
+    grid-area: 2 / 2 / 4 / 3;
+}
+.gallery__img:nth-of-type(5) {
+    grid-area: 5 / 1 / 6 / 2;
+}
+.gallery__img:nth-of-type(6) {
+    grid-area: 4 / 2 / 6 / 3; 
+}
+
+/************ Footer ************/
+/**footer{
+background-color: var(--primary);
+padding: 20px 40px;
+color: white;
+}
+footer li > a{
+    margin: 0;
+}
+div > h2{
+    text-align: left;
+}
+.logo{
+    margin-left: var(--small-spacing);
+}
+.list-col{
+    display: inline-block;
+    margin:  var(--small-spacing);
+}
+.copyright{
+    text-align: center;
+    font-size: 10px;
+}
+.footer-icon {
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer a {
+    font-size: 1.6em;
+}*/
+
+footer{
+    color: var(--base);
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    height: 100px;    
+}
+
+.footer-iconos {
+    margin-left: 20px;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(800px, 50%));
+        grid-template-rows: 1fr 0.25fr 0.5fr 0.25fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+        
+    .gallery__img:nth-of-type(1) {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+    .gallery__img:nth-of-type(2) {
+        grid-area: 1 / 2 / 2 / 3; 
+    }
+    .gallery__img:nth-of-type(3) {
+        grid-area: 3 / 1 / 5 / 2; 
+    }
+    .gallery__img:nth-of-type(4) {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+    .gallery__img:nth-of-type(5) {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    .gallery__img:nth-of-type(6) {
+        grid-area: 4 / 2 / 6 / 3; 
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+
