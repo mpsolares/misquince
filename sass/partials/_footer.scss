@@ -1,0 +1,13 @@
+footer{
+    color: $base;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    height: 100px;    
+}
+
+.footer-iconos {
+    margin-left: 20px;
+    align-items: center;
+}

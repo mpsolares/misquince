@@ -1,0 +1,19 @@
+*{
+    font-family: $primery-font;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+ul{
+    list-style-type: none;
+}
+li {
+    a{
+    color: #FFFFFF;
+    margin: $xsmal-spacing
+    }
+}
+
+h1, h2{
+    text-align: center;
+}

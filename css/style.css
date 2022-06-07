@@ -18,7 +18,7 @@
     --text-small:0.65em;
 }
 
-*{
+/* *{
     font-family: var(--font-primery);
     margin: 0;
     padding: 0;
@@ -34,10 +34,10 @@ li > a{
 
 h1, h2{
     text-align: center;
-}
+} */
 
 /************ Header ************/
-.bg-img{
+/* .bg-img{
     background-image: url("../img/cheerful-attractive-young-woman-with-backpack-and-notebooks-standing-and-smiling-in-park.jpg");
     background-position: center top;
     background-repeat: no-repeat;
@@ -62,9 +62,9 @@ h1{
     font-size: var(--text-large);
     margin-bottom: 0;
     color: #FFFFFF;
-}
+} */
 /** Animación home **/
-.scale-up-center {
+/* .scale-up-center {
 	-webkit-animation: scale-up-center 0.4s ease-in 0.1s both;
 	        animation: scale-up-center 0.4s ease-in 0.1s both;
 }
@@ -89,15 +89,15 @@ h1{
     }
   }
 /* Transition */
-
+/*
 #transition1 {transition-timing-function: ease-in;}
 #transition1:hover {
     font-size: var(--text-large);
     font-weight: 700;
-  }
+  } */
 
 /************ nav ************/
-.topnav {
+/* .topnav {
     overflow: hidden;
     background-color: var(--secondary);
   }
@@ -114,7 +114,7 @@ h1{
     float: right;
     text-align: center;
     /* padding: 14px 16px; */
-    text-decoration: none;
+    /* text-decoration: none;
     font-size: var(--text-base);
     margin: 0;
   }
@@ -123,7 +123,7 @@ h1{
   }
   .topnav li > a:hover {
     color: var(--primary);
-  }
+  } */
 
 
 
@@ -163,7 +163,7 @@ form{
 }
 
 /*****  galeria  *****/
-.gallery {
+/* .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 0.25fr 0.5fr 0.25fr 1fr;
@@ -188,7 +188,7 @@ form{
 }
 .gallery__img:nth-of-type(6) {
     grid-area: 4 / 2 / 6 / 3; 
-}
+} */
 
 
 
@@ -224,7 +224,7 @@ div > h2{
 footer a {
     font-size: 1.6em;
 }*/
-
+/*  *** Era el activo post bootstrap ***
 footer{
     color: var(--base);
     background-color: var(--primary);
@@ -237,7 +237,7 @@ footer{
 .footer-iconos {
     margin-left: 20px;
     align-items: center;
-}
+} */
 
 
 @media screen and (max-width: 480px) {

@@ -1,0 +1,55 @@
+.bg-img{
+    background-image: url("../img/cheerful-attractive-young-woman-with-backpack-and-notebooks-standing-and-smiling-in-park.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+}
+.banner-text {
+    padding-top: 33%;
+}
+.position-text{
+    text-align:center;
+    margin-top: 5px;
+}
+.position-text li{
+	float: none;
+	display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: $text-large;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+/************ nav ************/
+.topnav {
+    overflow: hidden;
+    background-color: $secondary;
+    &__a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: $text-base;
+    }
+    &__li {
+      float: right;
+      text-align: center;
+      /* padding: 14px 16px; */
+      text-decoration: none;
+      font-size: $text-base;
+      margin: 0;
+    }
+    &__h1 > a{
+      margin-top: 14px;
+    }
+    &__li > a:hover {
+      color: $primary;
+    }
+  }
+

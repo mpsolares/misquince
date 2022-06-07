@@ -1,6 +1,18 @@
-div{
-    background-color: red;
-    p{
-        background-color: lightblue; 
-    }
-} 
+/* Misc */
+
+@import './misc/variable';
+@import './misc/normalize';
+@import './misc/animations';
+
+/* Partials */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* Views */
+
+@import './views/acerca';
+@import './views/contacto';
+@import './views/donde';
+@import './views/fotos';
+
