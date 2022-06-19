@@ -26,6 +26,7 @@
 
 #transition1 {transition-timing-function: ease-in;}
 #transition1:hover {
-    font-size: $text-large;
+    font-size: $text-medium;
     font-weight: 700;
+    color: red;
   }

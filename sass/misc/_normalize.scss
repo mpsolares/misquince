@@ -10,10 +10,12 @@ ul{
 li {
     a{
     color: #FFFFFF;
-    margin: $xsmal-spacing
+    margin: $xsmal-spacing;
     }
 }
-
+h1{
+    font-size: $text-large;
+}
 h1, h2{
     text-align: center;
 }

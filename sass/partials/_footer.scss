@@ -1,10 +1,13 @@
 footer{
+    position:relative;
+    bottom:0;
     color: $base;
     background-color: $primary;
     display: flex;
     align-items: center;
     justify-content: space-around;    
-    height: 100px;    
+    height: 100px;
+    width:100%;
 }
 
 .footer-iconos {
