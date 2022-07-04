@@ -1,277 +1,243 @@
-:root{
-    /* colors */
-    --primary: #28241c;
-    --secondary: #86785C;
-    --base: #ebe6e0;
-    
-    /* font families */
-    --font-primery: 'Rubik', sans-serif;
-    
-    /* spacing */
-    --small-spacing: 2.4rem;
-    --xsmal-spacing: 0.625rem;
+/* Misc */
+/* colors */
+/* font families */
+/* spacing */
+/* Font sizes */
+/* Line */
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF; }
 
-    /* Font sizes */
-    --text-large:1.4em; 
-    --text-medium:1.2em;
-    --text-base: 1em;
-    --text-small:0.65em;
-}
+ul {
+  list-style-type: none; }
 
-/* *{
-    font-family: var(--font-primery);
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-}
-ul{
-    list-style-type: none;
-}
-li > a{
-    color: #FFFFFF;
-    margin: var(--xsmal-spacing);
-}
+li a {
+  color: #FFFFFF;
+  margin: 0.625rem;
+  text-decoration: none; }
 
-h1, h2{
-    text-align: center;
-} */
+h1 {
+  font-size: 2.4em; }
 
-/************ Header ************/
-/* .bg-img{
-    background-image: url("../img/cheerful-attractive-young-woman-with-backpack-and-notebooks-standing-and-smiling-in-park.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 750px;
-}
-.banner-text {
-    padding-top: 33%;
-}
-.position-text{
-    text-align:center;
-    margin-top: 5px;
-}
-.position-text li{
-	float: none;
-	display: inline-block;
-}
-a{
-    text-decoration: none;
-}
-h1{
-    font-size: var(--text-large);
-    margin-bottom: 0;
-    color: #FFFFFF;
-} */
-/** Animación home **/
-/* .scale-up-center {
-	-webkit-animation: scale-up-center 0.4s ease-in 0.1s both;
-	        animation: scale-up-center 0.4s ease-in 0.1s both;
-}
+h1, h2 {
+  text-align: center; }
+
+.navbar-brand {
+  color: #3d3626 !important; }
+
+.nav-link {
+  color: #86785C !important; }
+
+/************ Body ************/
+.titles {
+  color: #86785C;
+  text-align: center;
+  margin-bottom: 20px; }
+
+#contacto p {
+  color: #86785C; }
+
+/** sections colors **/
+#acerca, #fotos, #donde, #contacto {
+  background-color: #ebe6e0;
+  color: #86785C;
+  padding: 40px; }
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s ease-in 0.1s both;
+  animation: scale-up-center 0.4s ease-in 0.1s both; }
+
 @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 /* Transition */
-/*
-#transition1 {transition-timing-function: ease-in;}
+#transition1 {
+  transition-timing-function: ease-in; }
+
 #transition1:hover {
-    font-size: var(--text-large);
-    font-weight: 700;
-  } */
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ebe6e0; }
+
+.nav-link:hover {
+  color: #3d3626 !important; }
+
+button:hover {
+  background-color: #3d3626; }
+
+@media screen and (max-width: 480px) {
+  footer {
+    flex-direction: column; }
+  .donde-at {
+    width: 100% !important; }
+  .banner-text {
+    padding-top: 75% !important; }
+  .position-text {
+    width: 90%; }
+  #contacto, #donde, .donde-at {
+    padding: 10px 0 20px 0 !important; }
+  #donde, li > p {
+    margin-bottom: 0.5rem; } }
+
+/* Partials */
+.bg-img {
+  background-image: url("../img/background/header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px; }
+
+.banner-text {
+  padding-top: 25%; }
+
+.position-text {
+  text-align: center;
+  margin-top: 5px; }
+
+.position-text li {
+  float: none;
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 0;
+  color: #FFFFFF; }
 
 /************ nav ************/
-/* .topnav {
-    overflow: hidden;
-    background-color: var(--secondary);
-  }
-  
-  .topnav a {
+.topnav {
+  overflow: hidden;
+  background-color: #86785C; }
+  .topnav__a {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: var(--text-base);
-  }
-  .topnav li {
+    font-size: 1em; }
+  .topnav__li {
     float: right;
     text-align: center;
     /* padding: 14px 16px; */
-    /* text-decoration: none;
-    font-size: var(--text-base);
-    margin: 0;
-  }
-  .topnav h1 > a{
-    margin-top: 14px;
-  }
-  .topnav li > a:hover {
-    color: var(--primary);
-  } */
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0; }
+  .topnav__h1 > a {
+    margin-top: 14px; }
 
-
-
-/************ Body ************/
-.titles{
-    color: var(--secondary);
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-#contacto > p{
-    color: var(--secondary);
-    padding: 20px 50px;
-}
-#acerca p{
-    color: var(--secondary);
-}
-/** sections colors **/
-
-#acerca, #fotos, #donde, #contacto{
-    background-color: #ebe6e0;
-    color: var(--secondary);
-    padding: 40px;
-}
-.contact-color{
-    color: var(--secondary);
-}
-
-form{
-    text-align: center;
-}
-.donde-at{
-    padding: 20px;
-}
-.gallery-margin{
-    padding: 10px 0 50px 0;
-}
-
-/*****  galeria  *****/
-/* .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 0.25fr 0.5fr 0.25fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-    
-.gallery__img:nth-of-type(1) {
-    grid-area: 1 / 1 / 3 / 2;
-}
-.gallery__img:nth-of-type(2) {
-    grid-area: 1 / 2 / 2 / 3; 
-}
-.gallery__img:nth-of-type(3) {
-    grid-area: 3 / 1 / 5 / 2; 
-}
-.gallery__img:nth-of-type(4) {
-    grid-area: 2 / 2 / 4 / 3;
-}
-.gallery__img:nth-of-type(5) {
-    grid-area: 5 / 1 / 6 / 2;
-}
-.gallery__img:nth-of-type(6) {
-    grid-area: 4 / 2 / 6 / 3; 
-} */
-
-
-
-/************ Footer ************/
-/**footer{
-background-color: var(--primary);
-padding: 20px 40px;
-color: white;
-}
-footer li > a{
-    margin: 0;
-}
-div > h2{
-    text-align: left;
-}
-.logo{
-    margin-left: var(--small-spacing);
-}
-.list-col{
-    display: inline-block;
-    margin:  var(--small-spacing);
-}
-.copyright{
-    text-align: center;
-    font-size: 10px;
-}
-.footer-icon {
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-footer a {
-    font-size: 1.6em;
-}*/
-/*  *** Era el activo post bootstrap ***
-footer{
-    color: var(--base);
-    background-color: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;    
-    height: 100px;    
-}
+footer {
+  position: relative;
+  bottom: 0;
+  color: #ebe6e0;
+  background-color: #3d3626;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%; }
 
 .footer-iconos {
-    margin-left: 20px;
-    align-items: center;
-} */
+  margin-left: 20px;
+  align-items: center; }
 
+/* Views */
+#acerca {
+  background-image: url("../img/background/mapa.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px; }
 
-@media screen and (max-width: 480px) {
-    
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(800px, 50%));
-        grid-template-rows: 1fr 0.25fr 0.5fr 0.25fr 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-        
-    .gallery__img:nth-of-type(1) {
-        grid-area: 1 / 1 / 3 / 2;
-    }
-    .gallery__img:nth-of-type(2) {
-        grid-area: 1 / 2 / 2 / 3; 
-    }
-    .gallery__img:nth-of-type(3) {
-        grid-area: 3 / 1 / 5 / 2; 
-    }
-    .gallery__img:nth-of-type(4) {
-        grid-area: 2 / 2 / 4 / 3;
-    }
-    .gallery__img:nth-of-type(5) {
-        grid-area: 5 / 1 / 6 / 2;
-    }
-    .gallery__img:nth-of-type(6) {
-        grid-area: 4 / 2 / 6 / 3; 
-    }
+#acerca p {
+  color: #86785C;
+  text-align: justify; }
 
-    footer {
-        flex-direction: column;
-    }
-}
+#contacto {
+  background-image: url("../img/background/sellos.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px; }
 
+#contacto, i {
+  font-size: 1.2em;
+  font-style: normal; }
 
+h3 {
+  text-align: left;
+  font-size: 1.2em !important;
+  font-weight: 400; }
+
+.mia_form {
+  background-color: #86785C;
+  border-radius: 10px;
+  padding: 10px 20px; }
+
+.mia_form_1 {
+  background-color: #86785C;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px; }
+
+.mia_form_2 {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px; }
+
+.form_background {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px 30px 20px; }
+
+.contact-color {
+  color: #86785C; }
+
+.form-control {
+  background-color: #E5E5E5 !important;
+  border: none !important;
+  border-radius: 0 !important; }
+
+.line_1 {
+  border-left: medium solid #86785C; }
+
+form {
+  text-align: left !important; }
+
+#donde {
+  background-image: url("../img/background/mapa.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px; }
+
+.donde-at {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 50%; }
+
+#fotos {
+  background-image: url("../img/background/sellos.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px; }

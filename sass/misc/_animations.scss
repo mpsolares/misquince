@@ -28,5 +28,13 @@
 #transition1:hover {
     font-size: $text-medium;
     font-weight: 700;
-    color: red;
+    color: $base;
   }
+
+.nav-link:hover{
+    color: $primary !important;   
+}
+
+button:hover{
+    background-color: $primary;
+} 

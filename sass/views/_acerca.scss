@@ -1,0 +1,14 @@
+#acerca{
+    background-image: url("../img/background/mapa.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+
+#acerca {
+    p{
+    color: $secondary;
+    text-align: justify;
+    }
+}
