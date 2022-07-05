@@ -174,7 +174,7 @@ footer {
   text-align: justify; }
 
 #contacto {
-  background-image: url("../img/background/foto_sellos.png");
+  background-image: url("../img/background/background.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,7 +236,7 @@ form {
   width: 50%; }
 
 #fotos {
-  background-image: url("../img/background/foto_sellos.png");
+  background-image: url("../img/background/background.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
